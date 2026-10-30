@@ -763,7 +763,13 @@ h1,h2,h3,p{margin:0}
 .p-port .pgrid .pc:nth-child(n+4){grid-column:span 3}
 .p-port .pgrid .pc:nth-child(n+4) .pc-ph{aspect-ratio:624/183}
 @media (max-width:920px){.p-port .pgrid{grid-template-columns:1fr 1fr}.p-port .pgrid .pc,.p-port .pgrid .pc:nth-child(n+4){grid-column:span 1}.p-port .pgrid .pc:nth-child(5){grid-column:span 2}.p-port .pgrid .pc:nth-child(n+4) .pc-ph{aspect-ratio:416/183}}
-@media (max-width:600px){.p-port .pgrid{grid-template-columns:1fr}.p-port .pgrid .pc:nth-child(5){grid-column:auto}}
+@media (max-width:600px){
+  .p-port .pgrid{grid-template-columns:1fr}
+  .p-port .pgrid .pc:nth-child(5){grid-column:auto}
+  .p-port .pc-tx{height:auto;padding:22px}
+  .p-port .pc-mv{position:relative;top:auto;left:auto;right:auto;padding-right:28px}
+  .p-port .pc-ar{top:22px;right:22px}
+}
 .pc-no{background:rgba(66,87,72,.6);padding:4px 10px;border-radius:999px;text-shadow:none;top:18px;left:18px}
 .p-port .pgrid .pc .pc-ph{aspect-ratio:4/3}
 .p-port .pgrid .pc:nth-child(n+4) .pc-ph{aspect-ratio:3/2}
